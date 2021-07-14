@@ -3,6 +3,10 @@ body {
   font-family: sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   width: 1170px;
   margin: auto;
@@ -79,8 +83,15 @@ body {
 }
 
 @media (max-width: 768px) {
-  .navbar .navbar__contacts {
+  .navbar__contacts {
     display: none;
+  }
+  .navbar__button {
+    font-style: 12px;
+    padding: 12px 26px;
+  }
+  .navbar__logo {
+    width: 90px;
   }
 }
 /*# sourceMappingURL=style.css.map */
