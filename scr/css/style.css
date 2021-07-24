@@ -67,6 +67,7 @@ img {
   font-family: 'Museo Sans 700 Bold', sans-serif;
   font-weight: 700;
   font-size: 24px;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -88,6 +89,10 @@ img {
   padding: 20px 26px;
   font-size: 15px;
   border-radius: 10px;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
 }
 
 /* Импорт стилей шапки */
@@ -156,7 +161,7 @@ img {
   }
 }
 
-/* Импорт стилей main блока*/
+/*Стили для блока main*/
 .main-menu1 {
   background-color: #f5f5f5;
   padding: 50px;
@@ -169,8 +174,8 @@ img {
 }
 
 .main-text {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   padding-right: 100px;
 }
 
@@ -276,7 +281,7 @@ img {
   }
 }
 
-/*Импорт стилей offer блока*/
+/*Стили для блока offer*/
 .offer {
   background: url("../img/offer_bg.jpg") no-repeat;
   background-size: contain;
@@ -304,6 +309,7 @@ img {
   max-width: 360px;
   line-height: 35px;
   margin-bottom: 24px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -387,5 +393,66 @@ img {
     width: 100%;
     padding-right: 0;
   }
+}
+
+/*Стили для блока modal*/
+.modal {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  margin: auto;
+  position: relative;
+  max-width: 450px;
+  width: 90%;
+  min-width: 200px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*Стили для блока portfolio*/
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/portfolio_pattern.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__image {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
